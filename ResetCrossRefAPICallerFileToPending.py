@@ -26,7 +26,7 @@ try:
     database_password = default_settings['database_password']
 
     batch_id = input("Please enter batchid to be reset:")
-    sql_statement = "select RefId,JobId from [WMS_CHVDP].[dbo].[wms_JobsProcessTracker] where RefId='"+ batch_id +"'"
+    sql_statement = "select RefId,JobId from [wms_JobsProcessTracker] where RefId='"+ batch_id +"'"
 
 except Exception as e:
     print(f"Error {e}.")
